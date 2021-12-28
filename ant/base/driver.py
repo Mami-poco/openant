@@ -249,7 +249,7 @@ try:
             pass
 
         def read(self):
-            return self._in.read(4096)
+            return self._in.read(self._in. wMaxPacketSize)
 
         def write(self, data):
             self._out.write(data)
